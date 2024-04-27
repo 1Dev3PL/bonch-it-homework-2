@@ -35,18 +35,20 @@ body {
   background-image: url("images/background-image.png");
   background-size: cover;
   background-position: center;
+  padding: 2rem;
 }
 
 .content {
   background-color: black;
-  width: 70%;
-  padding: 4rem 3rem 4rem 3rem;
+  padding: 5rem 5.5rem 5.5rem 6rem;
+  width: 1100px;
 }
 
 .title-block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
 .title {
@@ -54,7 +56,6 @@ body {
   font-size: 64px;
   font-weight: 800;
   letter-spacing: 0.3em;
-  text-align: center;
   margin: 0;
 }
 
@@ -63,13 +64,14 @@ body {
   font-size: 20px;
   letter-spacing: 0.03em;
   color: white;
-  text-align: center;
   margin: 0;
 }
 
 .cards-block {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card {
@@ -77,6 +79,9 @@ body {
   border: white solid 5px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 15rem;
 }
 
 .card-title {
@@ -97,6 +102,8 @@ body {
   line-height: 25px;
   letter-spacing: 0.03em;
   color: white;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .card-explore {
@@ -140,4 +147,14 @@ body {
   src: local("Montserrat-ExtraBold"),
   url("fonts/Montserrat-ExtraBold.woff2") format("woff2");
   font-weight: 800;
+}
+
+@media screen and (max-width: 1200px) {
+  .cards-block {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
 }
